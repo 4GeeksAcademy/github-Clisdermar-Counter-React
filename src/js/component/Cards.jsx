@@ -1,21 +1,17 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
-import { func } from "prop-types";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 function Cards(props) {
-
-    return <>
+    return (
         <div className="container bg-dark">
-
-            <div class="card bg-black text-white">
-                <div class="card-body">
+            <div className="card bg-black text-white">
+                <div className="card-body text-center">
                     <h1>{props.icon ? <FontAwesomeIcon icon={faClock} /> : props.num}</h1>
                 </div>
             </div>
         </div>
-    </>
+    );
 }
-
 
 export default Cards;
